@@ -1,5 +1,42 @@
-.header {
-    width: 100%;
-    height: 200px;
-    background: red;
+header {
+    padding: 23px 0;
+    background: $color-1;
+
+    .logo {
+        color: $color-2;
+        font-size: 36px;
+        font-weight: 300;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        @include font('sans');
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 27px;
+            min-height: 41.01px;
+            background-image: url(../../../images/logo.png);
+            background-repeat: no-repeat;
+        }
+    }
+
+    nav {
+        padding: 15px 0;
+
+        a {
+            display: inline-block;
+            margin-right: 10px;
+            color: $color-2;
+            font-size: 14px;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            @include font('sans');
+        }
+    }
+
+    span.toggle {
+        
+    }
 }

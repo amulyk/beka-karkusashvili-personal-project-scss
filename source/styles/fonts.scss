@@ -1,0 +1,12 @@
+$sans: 'Open Sans', sans-serif;
+$rel: 'Raleway', sans-serif;
+
+@mixin font($family:'rel') {
+    @if ($family=='rel') {
+        font-family: $rel;
+    }
+
+    @else {
+        font-family: $sans;
+    }
+}
