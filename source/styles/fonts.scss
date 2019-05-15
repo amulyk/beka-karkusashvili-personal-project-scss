@@ -1,9 +1,19 @@
 $sans: 'Open Sans', sans-serif;
 $rel: 'Raleway', sans-serif;
+$mon: 'Montserrat', sans-serif;
+$awsome: 'FontAwesome';
 
 @mixin font($family:'rel') {
     @if ($family=='rel') {
         font-family: $rel;
+    }
+
+    @else if($family=='mon') {
+        font-family: $mon;
+    }
+
+    @else if($family=='icon') {
+        font-family: $awsome;
     }
 
     @else {
