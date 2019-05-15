@@ -1,0 +1,95 @@
+footer {
+    padding: 46px 0 59px;
+    background: $color-16;
+    text-align: center;
+
+    .logo {
+        display: inline-block;
+        margin-bottom: 46px;
+        margin-left: 2px;
+        color: $color-2;
+        font-size: 36px;
+        font-weight: 300;
+        letter-spacing: .6px;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        @include font('rel');
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 27px;
+            min-height: 41.01px;
+            margin-right: -1px;
+            background-image: url(../../../images/logo.png);
+            background-repeat: no-repeat;
+        }
+    }
+
+    .social {
+        margin-bottom: 47px;
+        margin-left: -1px;
+
+        a {
+            display: inline-block;
+            position: relative;
+            width: 40px;
+            height: 40px;
+            margin: 0 2px;
+            border-radius: 3px;
+            background-color: $color-18;
+            text-decoration: none;
+
+            &::before {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            &.mail::before {
+                background-image: url(../../../images/footer/mail.svg);
+            }
+
+            &.twitter::before {
+                background-image: url(../../../images/footer/twitter.svg);
+            }
+
+            &.facebook::before {
+                background-image: url(../../../images/footer/facebook.svg);
+            }
+
+            &.behance::before {
+                background-image: url(../../../images/footer/be.svg);
+            }
+
+            &.deviantart::before {
+                background-image: url(../../../images/footer/deviantart.svg);
+            }
+
+            &.flickr::before {
+                background-image: url(../../../images/footer/flickr.svg);
+            }
+
+            &.active,
+            &:hover {
+                background-color: $color-19;
+            }
+        }
+    }
+
+    .copyright {
+        margin-left: 2px;
+        color: $color-17;
+        font-size: 11px;
+        letter-spacing: .02em;
+
+        @include font('rel');
+    }
+}

@@ -1,8 +1,8 @@
 @import 'reset';
 @import 'base';
 @import 'palette';
-@import 'fonts';
 @import 'media-queries';
+@import 'fonts';
 
 // Componenets
 
@@ -10,3 +10,6 @@
 @import 'components/slider/index';
 @import 'components/about/index';
 @import 'components/service/index';
+@import 'components/portfolio/index';
+@import 'components/contact/index';
+@import 'components/copyright/index';

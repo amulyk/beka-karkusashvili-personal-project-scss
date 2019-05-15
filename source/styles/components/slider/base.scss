@@ -1,6 +1,6 @@
 #slider {
     position: relative;
-    padding: 243px 0 259px;
+    height: 760px;
     background: $color-4;
     text-align: center;
 
@@ -18,7 +18,7 @@
             @include font('icon');
 
             &.prev {
-                left: 40px;
+                left: 32px;
 
                 &::before {
                     content: '';
@@ -27,7 +27,7 @@
             }
 
             &.next {
-                right: 40px;
+                right: 32px;
 
                 &::before {
                     content: '';
@@ -47,7 +47,7 @@
 
     .container {
         width: 1170px;
-        margin: 0 auto;
+        transform: translateY(-8px);
 
         figure {
             position: absolute;
@@ -64,7 +64,7 @@
             }
         }
 
-        .hover {
+        .content {
             position: relative;
             z-index: 3;
 
@@ -73,7 +73,7 @@
                 margin-left: 21px;
                 color: $color-2;
                 font-size: 62px;
-                font-weight: 100;
+                font-weight: 200;
                 word-spacing: -2px;
 
                 @include font('rel');
