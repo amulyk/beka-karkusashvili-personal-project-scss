@@ -1,1 +1,23 @@
-// stylelint-disable
+#service {
+    padding: 143px 0;
+    background-color: $color-10;
+
+    h3 {
+        color: $color-2;
+
+        @include font('rel');
+
+        &::before {
+            background-color: $color-6;
+        }
+
+        &::after {
+            background-color: $color-10;
+            background-image: url(../../../images/about/info.svg);
+        }
+
+        span {
+            color: $color-3;
+        }
+    }
+}
