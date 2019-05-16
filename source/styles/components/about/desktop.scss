@@ -1,1 +1,14 @@
-// stylelint-disable
+.about {
+
+    .wrap {
+        width: 990px;
+
+        .content .list .item {
+            margin-bottom: 30px;
+
+            &:nth-child(even) {
+                margin-left: 0;
+            }
+        }
+    }
+}
