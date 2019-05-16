@@ -1,0 +1,16 @@
+footer {
+    padding: 46px 0 58px;
+
+    .logo {
+        transform: translateY(-1px);
+        font-weight: 200;
+
+        &::before {
+            transform: translateY(2px);
+        }
+    }
+
+    .contact-info {
+        margin-left: -9px;
+    }
+}

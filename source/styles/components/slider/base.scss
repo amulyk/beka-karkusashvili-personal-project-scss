@@ -1,4 +1,4 @@
-#slider {
+.slider {
     position: relative;
     height: 760px;
     background: $color-4;
@@ -7,15 +7,10 @@
     nav {
 
         a {
-            display: inline-block;
             position: absolute;
             z-index: 2;
             top: 301px;
             color: $color-2;
-            font-size: 20px;
-            text-decoration: none;
-
-            @include font('icon');
 
             &.prev {
                 left: 32px;

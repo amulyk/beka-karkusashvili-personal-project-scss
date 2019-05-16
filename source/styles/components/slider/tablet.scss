@@ -1,8 +1,9 @@
-#slider {
-    padding: 159px 10px 187px;
+.slider {
+    height: 592px;
 
     .container {
         width: 100%;
+        transform: translateY(-16px);
 
         .item .content {
 
