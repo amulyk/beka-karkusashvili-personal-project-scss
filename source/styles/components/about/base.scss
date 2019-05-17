@@ -44,7 +44,13 @@
                     margin-left: 21px;
                     object-fit: cover;
                     object-position: top;
+                    transition: object-position 2s linear;
                     background: $color-7;
+                }
+
+                &:hover img {
+                    object-position: bottom;
+                    transition: object-position 5s linear;
                 }
             }
         }
