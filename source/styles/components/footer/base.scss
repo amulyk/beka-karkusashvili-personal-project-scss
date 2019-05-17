@@ -22,7 +22,7 @@ footer {
             width: 27px;
             min-height: 41.01px;
             margin-right: -1px;
-            background-image: url(../../../images/logo.png);
+            background-image: url(/images/logo.png);
             background-repeat: no-repeat;
         }
     }
@@ -54,28 +54,13 @@ footer {
                 background-position: center;
             }
 
-            &.mail::before {
-                background-image: url(../../../images/footer/mail.svg);
-            }
+            $social: 'mail', 'twitter', 'facebook', 'be', 'deviantart', 'flickr';
 
-            &.twitter::before {
-                background-image: url(../../../images/footer/twitter.svg);
-            }
+            @each $icon in $social {
 
-            &.facebook::before {
-                background-image: url(../../../images/footer/facebook.svg);
-            }
-
-            &.behance::before {
-                background-image: url(../../../images/footer/be.svg);
-            }
-
-            &.deviantart::before {
-                background-image: url(../../../images/footer/deviantart.svg);
-            }
-
-            &.flickr::before {
-                background-image: url(../../../images/footer/flickr.svg);
+                &.#{$icon}::before {
+                    background-image: url(/images/footer/#{$icon}.svg);
+                }
             }
 
             &.active,
