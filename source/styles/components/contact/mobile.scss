@@ -22,7 +22,9 @@
         width: 100%;
 
         .info {
-            flex-direction: column;
+            grid-template-columns: auto;
+            grid-template-rows: repeat(3, auto);
+            justify-content: center;
             width: 100%;
             margin-bottom: 7px;
 
@@ -36,31 +38,27 @@
 
                 &.location {
 
-                    &::before {
-                        transform: translateX(7px);
-                    }
-
                     span {
                         margin-left: -1px;
                     }
                 }
 
                 &.contact {
+                    margin-left: 0;
 
-                    &::before {
-                        background-position: top 5px center;
+                    span {
+                        margin-left: -2px;
                     }
                 }
 
                 &.support {
 
                     &::before {
-                        transform: translate(7px, 4px);
-                        background-position: top left 0;
+                        background-position: top 3px left 0;
                     }
 
                     span {
-                        margin-left: -1px;
+                        margin-left: 1px;
                     }
                 }
             }

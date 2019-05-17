@@ -21,10 +21,14 @@
         width: 100%;
 
         .info {
+            grid-column-gap: 99px;
+            grid-template-columns: repeat(3, auto);
+            justify-content: center;
             width: 100%;
             margin-bottom: 48px;
 
             .item {
+                width: 190px;
 
                 &::before {
                     margin-bottom: 8px;
@@ -32,16 +36,13 @@
 
                 &.location {
 
-                    &::before {
-                        transform: translateX(-14px);
-                    }
-
                     span {
-                        margin-left: -39px;
+                        margin-left: 0;
                     }
                 }
 
                 &.contact {
+                    margin-left: 0;
 
                     &::before {
                         background-position: top 7px center;
@@ -49,14 +50,14 @@
                 }
 
                 &.support {
+                    padding-left: 6px;
 
                     &::before {
-                        transform: translate(29px, 1px);
-                        background-position: top left 0;
+                        background-position: top 2px left;
                     }
 
                     span {
-                        margin-left: 48px;
+                        margin-left: 0;
                     }
                 }
             }
